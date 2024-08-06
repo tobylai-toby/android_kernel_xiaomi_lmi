@@ -23,7 +23,7 @@ jobs:
           aosp-gcc: true
           aosp-clang: true
           ksu: true
-          ksu-version: main
+          ksu-version: v0.9.5
           android-version: 14
           aosp-clang-version: r487747c
           python-27: true
