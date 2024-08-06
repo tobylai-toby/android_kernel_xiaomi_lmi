@@ -15,17 +15,17 @@ jobs:
     - name: Build Kernel
       uses: dabao1955/kernel_build_action@main
       with:
-          kernel-url: https://github.com/tobylai-toby/android_kernel_xiaomi_lmi
+          kernel-url: https://github.com/LineageOS/android_kernel_xiaomi_sm8250
           kernel-dir: msm-4.19
           kernel-branch: lineage-21
-          config: lmi_defconfig
+          config: defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
-          #ksu: true
-          #ksu-version: v0.9.5
+          ksu: true
+          ksu-version: main
           android-version: 14
           aosp-clang-version: r487747c
           python-27: true
-          disable-lto: true
+          disable-lto: false
           anykernel3: true
